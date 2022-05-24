@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.mainCont {
+  background: url(assets/backGround.png);
+  background-repeat: unset;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  user-select: none;
+}
+.FsLogoCont {
+  width: 10%;
+  height: 40px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  box-sizing: border-box;
+}
+.FsLogoCont > img {
+  width: 50%;
+}
+.mailBodyCont {
+  padding: 2% 3%;
+}
+.mailHeadCont {
+  width: 55%;
+  margin: 3% auto;
+  text-align: center;
+}
+.mailHeading {
+  margin: unset;
+  padding: unset;
+  font-size: 38px;
+  font-weight: 900;
+  color: #814d34;
+}
+.catchLines {
+  margin: unset;
+  padding: unset;
+  font-size: 20px;
+  font-weight: 400;
+  color: #814d34;
+}
+.infImgHolder {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.firstImg,
+.secondImg {
+  width: 48%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.imgBg {
+  width: 100%;
+  height: 40vh;
+  background-image: url(assets/img1.png);
+  background-size: cover;
+}
+.imgBg2 {
+  width: 100%;
+  height: 40vh;
+  background-image: url(assets/img1.png);
+  background-size: cover;
+}
+.detailsCont {
+  background-color: #d7b68d;
+  box-sizing: border-box;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.infHead1 {
+  margin: unset;
+  padding: unset;
+  color: #000;
+  font-weight: 800;
+  font-size: 23px;
+}
+.infHead2 {
+  margin: unset;
+  padding: unset;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+.applyHereCont {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.applyBtn {
+  width: 35%;
+  font-size: 24px;
+  margin: 4% auto;
+  padding: 2% 0%;
+  color: #f1f1ed;
+  border: 1px solid #804e33;
+  background-color: #804e33;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.applyBtn:hover {
+  color: #804e33;
+  background-color: #f1f1ed;
+  border: 1px solid #804e33;
+}
+.applyBtn:active {
+  transform: translateY(5px);
+}
+.linkCont {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftLine,
+.rightLine {
+  width: 30%;
+  height: 2px;
+  background-color: black;
+}
+.link {
+  letter-spacing: 1px;
+  color: #000;
+  font-size: 18px;
+}
+
+@media (max-width: 980px) {
+  .mainCont {
+    width: 70% !important;
+  }
+}
+@media (max-width: 768px) {
+  .mainCont {
+    height: unset;
+  }
+  .infImgHolder {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .firstImg,
+  .secondImg {
+    width: 80%;
+    margin: 0 auto 3% auto;
+  }
+  .FsLogoCont {
+    top: 1%;
+    left: 1%;
+  }
+  .FsLogoCont > img {
+    width: 70%;
+  }
+}
+@media (max-width: 640px) {
+  .mainCont {
+    width: 100% !important;
+  }
+  .mailHeadCont {
+    width: 90%;
+  }
+  .applyBtn {
+    font-size: 18px;
+  }
+}
+@media (max-width: 450px) {
+  .mailHeading {
+    font-size: 20px;
+  }
+  .catchLines {
+    font-size: 15px;
+  }
+  .infHead1 {
+    font-size: 18px;
+  }
+  .infHead2 {
+    font-size: 15px;
+  }
+  .link {
+    font-size: 14px;
+  }
+  .leftLine,
+  .rightLine {
+    width: 20%;
+  }
+}
